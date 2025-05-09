@@ -1,0 +1,38 @@
+.Hole{
+    background-image: url('../images/Hole.png');
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    border: transparent solid;
+    border-radius: 20px;
+}
+
+.table{
+    margin-top: 0px;
+}
+.TitleBoard{
+    width: 400px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.playButton[type="button"]{
+    margin-bottom: 20px;
+    font-size: medium;
+    background-color: green;
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    height: auto;
+    width: 100px;
+}
+
+.mainContainer{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
