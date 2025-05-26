@@ -1,23 +1,27 @@
+//page objects variables
 display = document.getElementById('txtResult');
 lastResultsSection = document.getElementById('lastResults');
-let currentOperation;
+
+//Operation operands
 let firstOperand;
 let secondOperand;
 let selectedSign;
-let lastResults = [];
-let i = -1;
 let result;
-let isCalc = false //turned off
 
+//Array for the operation and related variables
+let lastResults = [];
+let currentOperation;
+let i = -1;
+
+
+//Function that at the buttons pression it puts 
+//the related number on display
 function placeNumber(num){
-    placedNum = num.toString();
-    display.value += placedNum;
+    display.value += num.toString();
 }
 
-function insertComma(comma){
-    display.value += comma.toString();
-}
-
+//Function that calculates the square root 
+//of the diplayed value on the screen
 function squareRoot(){
     let temp;
     temp = display.value;
@@ -29,6 +33,8 @@ function squareRoot(){
     lastResultsSection.innerHTML+= `${lastResults[i].toString()}<br>`;
 }
 
+//Function that calcultaes the power of the 
+// displayed value by an exponent
 function Pow(){
     selectedSign = '^';
     let temp = display.value
@@ -39,12 +45,15 @@ function Pow(){
     i++;
 }
 
+//Function that sets the operand
+//  for the operation
 function selectOperand(sign){
     selectedSign = sign.toString();
     firstOperand = parseFloat(display.value);
     display.value = ''
 }
 
+//Function that calculates the result
 function calculateResult(){
     secondOperand = parseFloat(display.value);
     display.value = '';
@@ -78,6 +87,9 @@ function calculateResult(){
     lastResultsSection.innerHTML+= `${lastResults[i].toString()}<br>`;
 }
 
+
+//Function that clears the display and 
+// sets the variables to null
 function clearDisplay(){
     display.value='';
     currentOperation = null;

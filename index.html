@@ -27,32 +27,31 @@
                     <td class="sign-button" onclick="Pow()">^</td>
                 </tr>
                 <tr>
-                    <td class="button" onclick="placeNumber(1)">1</td>
-                    <td class="button" onclick="placeNumber(2)">2</td>
-                    <td class="button" onclick="placeNumber(3)">3</td>
+                    <td class="button" onclick="placeNumber('1')">1</td>
+                    <td class="button" onclick="placeNumber('2')">2</td>
+                    <td class="button" onclick="placeNumber('3')">3</td>
                     <td class="sign-button" onclick="selectOperand('+')">+</td>
                 </tr>
                 <tr>
-                    <td class="button" onclick="placeNumber(4)">4</td>
-                    <td class="button" onclick="placeNumber(5)">5</td>
-                    <td class="button" onclick="placeNumber(6)">6</td>
+                    <td class="button" onclick="placeNumber('4')">4</td>
+                    <td class="button" onclick="placeNumber('5')">5</td>
+                    <td class="button" onclick="placeNumber('6')">6</td>
                     <td class="sign-button" onclick="selectOperand('-')">-</td>
                 </tr>
                 <tr>
-                    <td class="button" onclick="placeNumber(7)">7</td>
-                    <td class="button" onclick="placeNumber(8)">8</td>
-                    <td class="button" onclick="placeNumber(9)">9</td>
+                    <td class="button" onclick="placeNumber('7')">7</td>
+                    <td class="button" onclick="placeNumber('8')">8</td>
+                    <td class="button" onclick="placeNumber('9')">9</td>
                     <td class="sign-button" onclick="selectOperand('/')">/</td>
                 </tr>
                 <tr>
-                    <td class="button" onclick="placeNumber(0)">0</td>
+                    <td class="button" onclick="placeNumber('0')">0</td>
                     <td class="sign-button" onclick="selectOperand('*')">*</td>
-                    <td class="sign-button" onclick="insertComma('.')">.</td>
+                    <td class="sign-button" onclick="placeNumber('.')">.</td>
                     <td class="sign-button" onclick="calculateResult()">=</td>
                 </tr>
             </table>
         </div>
-        
         <div class="lastresults">
             <h2 style="font-weight: bold; font-family: Verdana, Geneva, Tahoma, sans-serif;">Last results:</h2>
             <div class="lastResults" id="lastResults">
@@ -62,6 +61,6 @@
     </div>
     <footer class="footer" align="center">©2025 - Gennaro Cicco</footer>
     <link rel="stylesheet" href="./style/style.css">
-    <script src="./scripts/main.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
